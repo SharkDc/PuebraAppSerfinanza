@@ -11,6 +11,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePage extends State<MyHomePage> {
+  //Lista de contactos
   List<Contacto> contactos = [
     Contacto(
         Nombre: 'Will Mora',
@@ -44,6 +45,7 @@ class _MyHomePage extends State<MyHomePage> {
       body: ListView.builder(
         itemCount: contactos.length,
         itemBuilder: (context, index) {
+          //Mostrando lista de contacto
           return ListTile(
             onTap: () {
               Navigator.push(
